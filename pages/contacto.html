@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../style.css">
+
+    <!-- BS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" 
+    crossorigin="anonymous">
+    <title>Contacto</title>
+</head>
+<body>
+    <header>
+        <div class="overlay"></div>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                    <img id="logo" src="../assets/logo22.png" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">INSTITUCIONAL</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">IDIOMAS</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">INGLÉS</a></li>
+                                <li><a class="dropdown-item" href="#">FRANCÉS</a></li>
+                                <li><a class="dropdown-item" href="#">ITALIANO</a></li>
+                                <li><a class="dropdown-item" href="#">PORTUGUÉS</a></li>
+                                <li><a class="dropdown-item" href="#">ALEMÁN</a></li>
+                                <li><a class="dropdown-item" href="#">RUSO</a></li>
+                                <li><a class="dropdown-item" href="#">COREANO</a></li>
+                                <li><a class="dropdown-item" href="#">CHINO</a></li>
+                                <li><a class="dropdown-item" href="#">ESPAÑOL PARA EXTRANJEROS</a></li>
+                                <li><a class="dropdown-item" href="#">LENGUAJE DE SEÑAS ARGENTINAS</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">SEDES</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">DEVOTO</a></li>
+                                <li><a class="dropdown-item" href="#">FLORES</a></li>
+                                <li><a class="dropdown-item" href="#">MICROCENTRO</a></li>
+                                <li><a class="dropdown-item" href="#">RAMOS MEJÍA</a></li>
+                                <li><a class="dropdown-item" href="#">CASEROS</a></li>
+                                <li><a class="dropdown-item" href="#">SAN MARTÍN</a></li>
+                                <li><a class="dropdown-item" href="#">ViCENTE LÓPEZ</a></li>
+                                <li><a class="dropdown-item" href="#">LOMAS DE ZAMORA</a></li>
+                                <li><a class="dropdown-item" href="#">AVELLANEDA</a></li>
+                                <li><a class="dropdown-item" href="#">CÓRDOBA</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">TRABAJA CON NOSOTROS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../pages/contacto.html">CONTACTO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">REGISTRARSE</a>
+                        </li>
+                        <li class="center">
+                            <button id="show-login">INICIAR SESIÓN</button>
+                            <div class="popUp">
+                                <div class="close-btn">&times;</div>
+                                <div class="form">
+                                    <h2>Log in</h2>
+                                    <div class="form-element">
+                                        <label for="email">Email</label>
+                                        <input type="text" id="email" placeholder="Ingrese su mail">
+                                    </div>
+                                    <div class="form-element">
+                                        <label for="password">Contraseña</label>
+                                        <input type="password" id="password" placeholder="Ingrese su contraseña">
+                                    </div>
+                                    <div class="form-elemen">
+                                        <input type="checkbox" id="recordarme">
+                                        <label for="recordarme" id="labelRec">Recordarme</label>
+                                    </div>
+                                    <div class="form-element">
+                                        <button>Iniciar sesión</button>
+                                    </div>
+                                    <div class="form-element">
+                                        <a href="#">Olvidé mi contraseña</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <div class="position-relative text-center">
+                    <h3 class="position-absolute textoFotoContac">Comunicate con nosotros <br> al 0800-933-54999 <br> de lunes a viernes de 8 a 21 hs.<br> <br> O completa el formulario que se encuentra <br> abajo y nos contactaremos a la brevedad. </h3>
+                    <img src="../assets/fotoContacto.jpg" class="img-fluid" alt="Foto de contacto">
+                </div>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-between">
+            <div class="col-4 mt-5 ml-3">
+                <img src="../assets/peoplePic.png" class="img-fluid imgContacto" alt="">
+            </div>
+            <div class="col-4 mt-5 mb-5">
+                <form id="formContacto" class="d-flex flex-column h-100">
+                    <h2 class="tituloContacto mt-5">Contactenos</h2>
+                    <div class="nombreApellido mb-3 mt-5">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nombre y apellido" required>
+                    </div>
+                    <div class="emailCliente mb-3">
+                        <input type="email" class="form-control" id="exampleFormControlInput2" placeholder="Mail" required>
+                    </div>
+                    <div class="consultaCliente mb-3">
+                        <textarea class="form-control contacto" id="validationTextarea" placeholder="Escriba aquí su consulta" required></textarea>
+                    </div>
+                    <div class="selecIdioma mb-3">
+                        <select class="form-select" required aria-label="select example">
+                            <option value="">Seleccione el idioma por el cual quiera consultar</option>
+                            <option value="1">Inglés</option>
+                            <option value="2">Francés</option>
+                            <option value="3">Italiano</option>
+                            <option value="4">Portugués</option>
+                            <option value="5">Aleman</option>
+                            <option value="6">Ruso</option>
+                            <option value="7">Coreano</option>
+                            <option value="8">Chino</option>
+                            <option value="9">Español para extranjeros</option>
+                            <option value="10">Lenguaje de señas argentinas</option>
+                        </select>
+                        <div class="invalid-feedback">Example invalid select feedback</div>
+                    </div>
+                    <div class="selecSede mb-3">
+                        <select class="form-select" required aria-label="select example">
+                            <option value="">Seleccione la sede por la cual quiera consultar</option>
+                            <option value="1">Devoto</option>
+                            <option value="2">Flores</option>
+                            <option value="3">Microcentro</option>
+                            <option value="4">Ramos Mejía</option>
+                            <option value="5">Caseros</option>
+                            <option value="6">San Martín</option>
+                            <option value="7">Vicente López</option>
+                            <option value="8">Lomas de Zamora</option>
+                            <option value="9">Avellaneda</option>
+                            <option value="10">Córdoba</option>
+                        </select>
+                        <div class="invalid-feedback">Example invalid select feedback</div>
+                    </div>
+                    <div class="mt-4 mb-3">
+                        <button class="btn btn-primary btnContacto" type="submit">Enviar mensaje</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-4 mt-5 mapaContacto">
+                <div>
+                    <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.9250251678773!2d-58.4973694!3d-34.5807636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb6500040d661%3A0xc5a8f373f2059850!2sGriveo%202342%2C%20C1419%20Villa%20Pueyrredon%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1685575126998!5m2!1ses-419!2sar" 
+                    width="100%" 
+                    height="590" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer style="background-color: greenyellow; height: 20vh;">
+        <H1>BLA</H1>
+    </footer>
+    
+
+
+
+<!-- Script JS -->
+<script src="../main.js"></script>
+
+<!-- Script JS BS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" 
+crossorigin="anonymous">
+</script>
+
+
+</body>
+</html>

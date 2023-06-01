@@ -9,6 +9,12 @@
     src: url(./assets/fuentes/Fontspring-DEMO-allroundgothic-medium.otf);
 }
 
+@font-face {
+    font-family: "flavor";
+    src: url(./assets/fuentes/Flavor_sans.otf);
+}
+
+
 body{
     background-image: linear-gradient(90deg, #3e32a8, #e310c7);
 }
@@ -41,6 +47,7 @@ nav{
     width: 350px !important;
     background-color: #e99fe4 !important;
     --bs-dropdown-link-hover-bg: #e310c7 !important;
+    --bs-dropdown-link-active-bg: #b521a6 !important;
 }
 
 .dropdown-item{
@@ -82,19 +89,6 @@ nav{
 
 
 /* POP UP LOG IN */
-/* #login{
-    background-image: linear-gradient(90deg, #3e32a8, #e310c7);
-    font-family: "spring";
-    height: 100vh;
-}
- */
-/* .center{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-} */
-
 .overlay {
     position: fixed;
     top: 0;
@@ -150,12 +144,13 @@ nav{
     position: absolute;
     top: 10px;
     right: 10px;
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     background: #888;
     color: #eee;
+    font-size: 30px;
     text-align: center;
-    line-height: 15px;
+    line-height: 23px;
     border-radius: 15px;
     cursor: pointer;
 }
@@ -212,3 +207,50 @@ nav{
     font-weight: 600;
 }
 
+#labelRec{
+    font-size: 15px;
+}
+
+/* CONTACTO */
+.tituloContacto{
+    margin-top: 60px;
+    font-family: "flavor";
+    font-size: 40px;
+}
+
+.textoFotoContac{
+    font-size: 80px;
+    color:#811d77;
+    font-family: "flavor";
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+}
+
+#formContacto{
+    background-color: white;
+    align-items: center;
+    align-self: center;
+    border: #e105cb solid 5px;
+    box-shadow: 3px 4px 6px 8px rgba(23, 2, 58, 0.15);
+}
+
+.form-control, .selecIdioma, .btn{
+    margin-left: 20px;
+}
+
+.btnContacto{
+    padding: 10px 20px !important;
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    background: #0D6EFD !important;
+}
+
+.mapaContacto{
+    width: 30% !important;
+    margin-right: 40px !important;
+}
+
+.imgContacto{
+    margin-left: 40px !important;
+}

@@ -207,7 +207,7 @@ nav{
     cursor: pointer;
 }
 
-.popUp .formUsuario .form-element a{
+.popUp .formUsuario .passwordOlvidada{
     display: block;
     text-align: right;
     font-size: 20px;
@@ -218,6 +218,119 @@ nav{
 
 #labelRec{
     font-size: 15px;
+}
+
+/* REGISTRO DE ALUMNOS */
+#signUp{
+    cursor: pointer;
+}
+
+.popUpSign{
+    position:absolute;
+    top: -150%;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(1.25);
+    width: 800px;
+    height: 650px;
+    padding: 20px 30px;
+    background: #fff;
+    box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    transition: top 0ms ease-in-out 200ms,
+                opacity 200ms ease-in-out 0ms,
+                transform 20ms ease-in-out 0ms;
+    z-index: 10000;
+}
+
+.popUpSign.active{
+    top: 350%;
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+    transition: top 0ms ease-in-out 0ms,
+                opacity 200ms ease-in-out 20ms,
+                transform 200ms ease-in-out 0ms;
+}
+
+.popUpSign .close-btn{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    background: #888;
+    color: #eee;
+    font-size: 30px;
+    text-align: center;
+    line-height: 23px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.popUpSign .formRegistro h2{
+    text-align: center;
+    color: #222;
+    margin: 10px 0px 20px;
+    font-size: 35px;
+}
+
+.popUpSign .formRegistro .form-element{
+    margin: 15px 0px;
+}
+
+.popUpSign .formRegistro .form-element label{
+    font-size: 20px;
+    color: #222;
+}
+
+.popUpSign .formRegistro .form-element input[type="text"],
+.popUpSign .formRegistro .form-element input[type="password"]{
+    margin-top: 5px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+
+.popUpSign .formRegistro .form-element input[type="checkbox"] {
+    margin-right: 20px;
+}
+
+.popUpSign .formRegistro .form-element button{
+    width: 100%;
+    height: 50px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    background: #e310c7;
+    color: #f5f5f5;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.popUpSign .formRegistro .form-element a{
+    display: block;
+    text-align: right;
+    font-size: 20px;
+    color: #1a79ca;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+#labelRec{
+    font-size: 15px;
+}
+
+.textoRegistro{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.itemPass{
+    font-size: 16px;
+    font-weight: 400;
 }
 
 /* FOOTER */

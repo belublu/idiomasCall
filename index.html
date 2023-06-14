@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,31 +9,34 @@
     <link rel="stylesheet" href="./style.css">
 
     <!-- BS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" 
-    rel="stylesheet" 
-    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" 
-    crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <title>Inicio</title>
 </head>
+
 <body>
     <header>
-        <div class="overlay"></div>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="overlay"></div>
             <div class="container-fluid">
                 <a class="navbar-brand" href="./index.html">
-                    <img id="logo" src="./assets/logo22.webp" alt="">
+                    <img id="logo" src="./assets/logo22.webp" alt="Logo del instituto">
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">INSTITUCIONAL</a>
+                            <a class="nav-link active" aria-current="page"
+                                href="./pages/institucional.html">INSTITUCIONAL</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">IDIOMAS</a>
-                            <ul class="dropdown-menu">
+                            <a class="nav-link dropdown-toggle" type="button" id="btnDropIdiomas"
+                                data-bs-toggle="dropdown" aria-expanded="false">IDIOMAS</a>
+                            <ul class="dropdown-menu" aria-labelledby="btnDropIdiomas">
                                 <li><a class="dropdown-item" href="#">INGLÉS</a></li>
                                 <li><a class="dropdown-item" href="#">FRANCÉS</a></li>
                                 <li><a class="dropdown-item" href="#">ITALIANO</a></li>
@@ -46,8 +50,9 @@
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">SEDES</a>
-                            <ul class="dropdown-menu">
+                            <a class="nav-link dropdown-toggle" href="#" type="button" type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">SEDES</a>
+                            <ul class="dropdown-menu dropSede dropdown-menu-end">
                                 <li><a class="dropdown-item" href="#">DEVOTO</a></li>
                                 <li><a class="dropdown-item" href="#">FLORES</a></li>
                                 <li><a class="dropdown-item" href="#">MICROCENTRO</a></li>
@@ -61,92 +66,175 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">TRABAJA CON NOSOTROS</a>
+                            <a class="nav-link active" aria-current="page" href="./pages/trabajaConNostros.html">TRABAJA
+                                CON NOSOTROS</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="./pages/contacto.html">CONTACTO</a>
                         </li>
-                        <li class="nav-item" >
-                            <a class="nav-link active" id="signUp" aria-current="page">REGISTRO DE ALUMNOS</a>
-                            <div class="popUpSign">
-                                <div class="close-btn">&times;</div>
-                                <form class="formRegistro">
-                                    <h2>REGISTRO</h2>
-                                    <div class="form-element">
-                                        <label for="nombre">Nombre y Apellido</label>
-                                        <input type="text" id="nombreApe" placeholder="Ingrese su nombre y apellido" required>
+                        <button type="button" class="btn btn-primary btn-primary-registro" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            REGISTRO DE ALUMNOS
+                        </button>
+                        <button type="button" class="btn btn-primary btn-primary-logIn" data-bs-toggle="modal"
+                            data-bs-target="#exampleModalLogIn">
+                            LOG IN
+                        </button>
+                        
+                        
+
+                        <!-- Modal REGISTRO DE ALUMNOS -->
+                        <div class="modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        <button type="button" class="close-btn" data-bs-dismiss="modal"
+                                            aria-label="Close">&times;</button>
+                                        <form class="formRegistro">
+                                            <h2>REGISTRO</h2>
+                                            <div class="form-element">
+                                                <label for="nombre">Nombre y Apellido</label>
+                                                <input type="text" id="nombreApe"
+                                                    placeholder="Ingrese su nombre y apellido" required>
+                                            </div>
+                                            <div class="form-element">
+                                                <label for="email">Email</label>
+                                                <input type="text" id="emailRegistro" placeholder="Ingrese su mail"
+                                                    required>
+                                            </div>
+                                            <div class="form-element">
+                                                <label for="password">Contraseña</label>
+                                                <input type="password" id="passwordRegistro"
+                                                    placeholder="Ingrese su contraseña" required>
+                                                <p class="textoRegistro mt-2 mb-1">La contraseña no debe contener
+                                                    espacios vacíos y debe tener:</p>
+                                                <ul>
+                                                    <li class="itemPass">Al menos una letra minúscula.</li>
+                                                    <li class="itemPass">Al menos una letra mayúscula.</li>
+                                                    <li class="itemPass">Al menos un carácter especial.</li>
+                                                    <li class="itemPass">Una longitud de 8 a 20 caracteres.</li>
+                                                </ul>
+                                                <button type="submit" class="login-btn btnRegistro my-5"
+                                                    id="clickReg">Registrarse</button>
+                                            </div>
+                                        </form>
                                     </div>
-                                    <div class="form-element">
-                                        <label for="email">Email</label>
-                                        <input type="text" id="email" placeholder="Ingrese su mail" required>
-                                    </div>
-                                    <div class="form-element">
-                                        <label for="password">Contraseña</label>
-                                        <input type="password" id="password" placeholder="Ingrese su contraseña" required>
-                                        <p class="textoRegistro mt-2 mb-1">La contraseña no debe contener espacios vacíos y debe tener:</p>
-                                        <li class="itemPass">Al menos una letra minúscula.</li>
-                                        <li class="itemPass">Al menos una letra mayúscula.</li>
-                                        <li class="itemPass">Al menos un carácter especial.</li>
-                                        <li class="itemPass">Una longitud de 8 a 20 caracteres.</li>
-                                        
-                                    </div>
-                                    <div class="form-element">
-                                        <button type="submit" class="login-btn btnRegistro my-5" id="click">Registrarse</button>
-                                    </div>
-                                </form>
+                                </div>
                             </div>
-                        </li>
-                        <li class="center mt-4">
-                            <button id="show-login">LOG IN</button>
-                            <div class="popUp">
-                                <div class="close-btn">&times;</div>
-                                <form class="formUsuario">
-                                    <h2>Log in</h2>
-                                    <div class="form-element">
-                                        <label for="email">Email</label>
-                                        <input type="text" id="email" placeholder="Ingrese su mail" required>
+                        </div>
+
+
+                        <!-- Modal LOG IN -->
+                        <div class="modal modalLogIn" id="exampleModalLogIn" tabindex="-1" aria-labelledby="exampleModalLabelLogIn"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content modal-contentLogIn" id="modalContentLogIn">
+                                    <div class="modal-body">
+                                        <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close">&times;</button>
+                                        <form class="formUsuario">
+                                            <h2>Log in</h2>
+                                            <div class="form-element">
+                                                <label for="email">Email</label>
+                                                <input type="text" id="emailLogIn" placeholder="Ingrese su mail" required>
+                                            </div>
+                                            <div class="form-element">
+                                                <label for="password">Contraseña</label>
+                                                <input type="password" id="passwordLogIn" placeholder="Ingrese su contraseña" required>
+                                            </div>
+                                            <div class="form-elemen">
+                                                <input type="checkbox" id="recordarme">
+                                                <label for="recordarme" id="labelRec">Recordarme</label>
+                                            </div>
+                                            <div class="form-element">
+                                                <button type="submit" class="login-btn" id="clickLog">Iniciar sesión</button>
+                                            </div>
+                                            <div class="form-element" id="passOlvido">
+                                                <p class="passwordOlvidada">Olvidé mi contraseña</p>
+                                            </div>
+                                        </form>
                                     </div>
-                                    <div class="form-element">
-                                        <label for="password">Contraseña</label>
-                                        <input type="password" id="password" placeholder="Ingrese su contraseña" required>
-                                    </div>
-                                    <div class="form-elemen">
-                                        <input type="checkbox" id="recordarme">
-                                        <label for="recordarme" id="labelRec">Recordarme</label>
-                                    </div>
-                                    <div class="form-element">
-                                        <button type="submit" class="login-btn" id="click">Iniciar sesión</button>
-                                    </div>
-                                    <div class="form-element" id="passOlvido">
-                                        <p class="passwordOlvidada">Olvidé mi contraseña</p>
-                                    </div>
-                                </form>
+                                </div>
                             </div>
-                        </li>
+                        </div>
                     </ul>
                 </div>
             </div>
+
         </nav>
+
+        <!-- <div class="popUpSign active" id="formRegPopUp">
+            <form class="formRegistro">
+                <div class="close-btn">&times;</div>
+                <h2>REGISTRO</h2>
+                <div class="form-element">
+                    <label for="nombre">Nombre y Apellido</label>
+                    <input type="text" id="nombreApe" placeholder="Ingrese su nombre y apellido" required>
+                </div>
+                <div class="form-element">
+                    <label for="email">Email</label>
+                    <input type="text" id="emailRegistro" placeholder="Ingrese su mail" required>
+                </div>
+                <div class="form-element">
+                    <label for="password">Contraseña</label>
+                    <input type="password" id="passwordRegistroñ" placeholder="Ingrese su contraseña" required>
+                    <p class="textoRegistro mt-2 mb-1">La contraseña no debe contener espacios vacíos y debe tener:</p>
+                    <li class="itemPass">Al menos una letra minúscula.</li>
+                    <li class="itemPass">Al menos una letra mayúscula.</li>
+                    <li class="itemPass">Al menos un carácter especial.</li>
+                    <li class="itemPass">Una longitud de 8 a 20 caracteres.</li>
+                    <button type="submit" class="login-btn btnRegistro my-5" id="clickReg">Registrarse</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="popUp" id="formLogPopUp">
+            <div class="close-btn">&times;</div>
+            <form class="formUsuario">
+                <h2>Log in</h2>
+                <div class="form-element">
+                    <label for="email">Email</label>
+                    <input type="text" id="emailLogIn" placeholder="Ingrese su mail" required>
+                </div>
+                <div class="form-element">
+                    <label for="password">Contraseña</label>
+                    <input type="password" id="passwordLogIn" placeholder="Ingrese su contraseña" required>
+                </div>
+                <div class="form-elemen">
+                    <input type="checkbox" id="recordarme">
+                    <label for="recordarme" id="labelRec">Recordarme</label>
+                </div>
+                <div class="form-element">
+                    <button type="submit" class="login-btn" id="clickLog">Iniciar sesión</button>
+                </div>
+                <div class="form-element" id="passOlvido">
+                    <p class="passwordOlvidada">Olvidé mi contraseña</p>
+                </div>
+            </form>
+        </div> -->
+
     </header>
 
     <main class="container-fluid">
         <div class="text-center">
             <div class="row h-25">
-                <div class= "col">
+                <div class="col">
                     <p class="tituloIdioma">! INSTITUTO DE IDIOMAS PARA TODOS !</p>
                 </div>
             </div>
 
             <div class="row h-50">
-                <div class= "col">
-                    <p class="lemaIdioma">¡Rompe barreras lingüísticas y desata tu potencial en nuestro instituto, donde la diversión y el aprendizaje se fusionan en una experiencia única!"</p>
+                <div class="col">
+                    <p class="lemaIdioma">¡Rompe barreras lingüísticas y desata tu potencial en nuestro instituto, donde
+                        la diversión y el aprendizaje se fusionan en una experiencia única!"</p>
                 </div>
             </div>
 
             <div class="row h-100">
-                <div class= "col">
+                <div class="col">
                     <form class="d-flex justify-content-center" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Buscá el idioma que desees." aria-label="Search">
+                        <input class="form-control me-2" type="search" placeholder="Buscá el idioma que desees."
+                            aria-label="Search">
                         <button class="btnInicio" type="submit">Buscar</button>
                     </form>
                 </div>
@@ -258,7 +346,7 @@
             </div>
             <div class="col-auto mt-5">
                 <a href="http://facebook.com/institutointidiomas">
-                    <img src="./assets/logoFb.png" id="logoFb" alt="Logo Facebook"> 
+                    <img src="./assets/logoFb.png" id="logoFb" alt="Logo Facebook">
                 </a>
             </div>
             <div class="col-auto mt-5">
@@ -269,7 +357,8 @@
         </div>
         <div class="row">
             <hr class="my-5">
-            <p class="textoCopyR text-center">&copy; 2023 Instituto Internacional de idiomas. Todos los derechos reservados.</p>
+            <p class="textoCopyR text-center">&copy; 2023 Instituto Internacional de idiomas. Todos los derechos
+                reservados.</p>
         </div>
     </footer>
 
@@ -278,14 +367,14 @@
     <script src="./main.js"></script>
 
     <!-- Script JS BS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" 
-    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" 
-    crossorigin="anonymous">
-</script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+        </script>
 
-<!-- Script Librería Sweet Alert -->
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <!-- Script Librería Sweet Alert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 
 
 </body>
+
 </html>

@@ -1,6 +1,6 @@
 * {
     margin: 0;
-    padding: 0; 
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -19,33 +19,33 @@
 }
 
 
-body{
+body {
     background-image: linear-gradient(90deg, #3e32a8, #e310c7);
 }
 
-#logo{
+#logo {
     width: 600px;
-    
+
 }
 
-.bg-body-tertiary{
+.bg-body-tertiary {
     --bs-bg-opacity: none !important;
-    
+
 }
 
-nav{
+nav {
     margin-left: 20px;
     margin-right: 20px;
 }
 
-.nav-link{
+.nav-link {
     font-size: 25px !important;
     font-weight: 500 !important;
     color: white !important;
     padding: 30px !important;
 }
 
-.dropdown-menu{
+.dropdown-menu {
     font-size: 20px !important;
     text-align: center !important;
     width: 350px !important;
@@ -54,40 +54,40 @@ nav{
     --bs-dropdown-link-active-bg: #b521a6 !important;
 }
 
-.dropdown-item{
+.dropdown-item {
     font-weight: 500 !important;
     color: rgb(253, 228, 251) !important;
 
 }
 
-.dropdown-menu[data-bs-popper]{
+.dropdown-menu[data-bs-popper] {
     left: -90px !important;
     top: 80px !important;
 }
 
-.dropdown-menu-end[data-bs-popper]{
+.dropdown-menu-end[data-bs-popper] {
     left: -100px !important;
     top: 80px !important;
 }
 
-.tituloIdioma{
+.tituloIdioma {
     font-family: "spring";
     font-size: 40px;
     color: white;
     font-weight: bold;
 }
 
-.lemaIdioma{
+.lemaIdioma {
     font-size: 30px;
     color: white;
     font-weight: 200;
 }
 
-.form-control{
+.form-control {
     width: 300px !important;
 }
 
-.btnInicio{
+.btnInicio {
     background-color: #0D6EFD;
     width: 200px;
     height: 50px;
@@ -97,17 +97,17 @@ nav{
     font-size: 20px;
 }
 
-.nav-pills .nav-link.active{
+.nav-pills .nav-link.active {
     height: 90px !important;
 }
 
-.fotoInicio{
+.fotoInicio {
     height: 800px !important;
     width: auto;
     margin-top: 40px !important;
 }
 
-.btn-primary-registro{
+.btn-primary-registro {
     --bs-btn-bg: none !important;
     --bs-btn-border-color: none !important;
     font-size: 25px !important;
@@ -116,7 +116,7 @@ nav{
     --bs-btn-active-bg: none !important;
 }
 
-.btn-primary-logIn{
+.btn-primary-logIn {
     --bs-btn-padding-x: none !important;
     --bs-btn-padding-y: none !important;
     height: 90px;
@@ -126,11 +126,11 @@ nav{
 }
 
 /* POP UP LOG IN */
-.moda-content{
+.moda-content {
     height: 40px !important;
 }
 
-#modalContentLogIn{
+#modalContentLogIn {
     height: 500px !important;
 }
 
@@ -148,7 +148,7 @@ nav{
 }
  */
 
-.close-btn{
+.close-btn {
     position: absolute;
     top: 10px;
     right: 10px;
@@ -163,24 +163,24 @@ nav{
     cursor: pointer;
 }
 
-.modal-contentLogIn .formUsuario h2{
+.modal-contentLogIn .formUsuario h2 {
     text-align: center;
     color: #222;
     margin: 10px 0px 20px;
     font-size: 35px;
 }
 
-.modal-contentLogIn .formUsuario .form-element{
+.modal-contentLogIn .formUsuario .form-element {
     margin: 15px 0px;
 }
 
-.modal-contentLogIn  .formUsuario .form-element label{
+.modal-contentLogIn .formUsuario .form-element label {
     font-size: 20px;
     color: #222;
 }
 
 .modal-contentLogIn .formUsuario .form-element input[type="text"],
-.modal-contentLogIn .formUsuario .form-element input[type="password"]{
+.modal-contentLogIn .formUsuario .form-element input[type="password"] {
     margin-top: 5px;
     display: block;
     width: 100%;
@@ -194,7 +194,7 @@ nav{
     margin-right: 20px;
 }
 
-.modal-contentLogIn  .formUsuario .form-element button{
+.modal-contentLogIn .formUsuario .form-element button {
     width: 100%;
     height: 50px;
     border: none;
@@ -206,7 +206,7 @@ nav{
     cursor: pointer;
 }
 
-.modal-contentLogIn  .formUsuario .passwordOlvidada{
+.modal-contentLogIn .formUsuario .passwordOlvidada {
     display: block;
     text-align: right;
     font-size: 20px;
@@ -215,7 +215,7 @@ nav{
     font-weight: 600;
 }
 
-#labelRec{
+#labelRec {
     font-size: 20px;
 }
 
@@ -226,34 +226,38 @@ nav{
 
 /* REGISTRO DE ALUMNOS */
 
-.modal-content{
+.modal-content {
     width: 800px !important;
     height: 700px !important;
     padding: 20px 20px;
 }
 
-.modal .formRegistro h2{
+.modal .formRegistro h2 {
     text-align: center;
     color: #222;
     margin: 10px 0px 20px;
     font-size: 35px;
 }
 
-button, input, optgroup, select, textarea{
-    
+button,
+input,
+optgroup,
+select,
+textarea {
+
     font-size: 20px !important;
 }
 
-.modal .formRegistro .form-element label{
+.modal .formRegistro .form-element label {
     font-size: 20px !important;
 }
 
-.modal .formRegistro .form-element{
+.modal .formRegistro .form-element {
     margin: 15px 0px;
 }
 
 .modal .formRegistro .form-element input[type="text"],
-.modal .formRegistro .form-element input[type="password"]{
+.modal .formRegistro .form-element input[type="password"] {
     margin-top: 5px;
     display: block;
     width: 100%;
@@ -277,7 +281,7 @@ button, input, optgroup, select, textarea{
 } */
 
 
-.modal .close-btn{
+.modal .close-btn {
     position: absolute;
     top: 10px;
     right: 10px;
@@ -292,17 +296,17 @@ button, input, optgroup, select, textarea{
     cursor: pointer;
 }
 
-.textoRegistro{
+.textoRegistro {
     font-size: 20px;
     font-weight: 600;
 }
 
-.itemPass{
+.itemPass {
     font-size: 18px;
     font-weight: 400;
 }
 
-.modal .formRegistro .form-element button{
+.modal .formRegistro .form-element button {
     width: 100%;
     height: 70px;
     border: none;
@@ -351,51 +355,57 @@ button, input, optgroup, select, textarea{
 
 /* FOOTER */
 
-footer{
+footer {
     height: 60vh;
-    background-color: #b521a6 ;
+    background-color: #b521a6;
 }
 
-.seccionesFooter, .textoCopyR{
+.seccionesFooter,
+.textoCopyR {
     color: white;
 }
 
-div .seccionesFooter a{
+div .seccionesFooter a {
     text-decoration: none;
     color: white;
 }
 
-#logoIg, #logoFb, #logoTw{
+#logoIg,
+#logoFb,
+#logoTw {
     width: 50px !important;
     height: 50px !important;
 }
 
-.imgFooter{
+.imgFooter {
     width: auto;
     height: 100px;
 }
-#logoIg, #logoFb, #logoTw{
+
+#logoIg,
+#logoFb,
+#logoTw {
     height: 30px;
     width: 30px;
 }
 
 /* CONTACTO */
-.tituloContacto{
+.tituloContacto {
     margin-top: 60px;
     font-family: "flavor";
     font-size: 40px;
 }
 
-.textoFotoContac{
+.textoFotoContac {
     font-size: 80px;
-    color:#811d77;
+    color: #811d77;
     font-family: "flavor";
     top: 50%;
     left: 30%;
     transform: translate(-50%, -50%);
 }
 
-#formContacto{
+#formContacto {
     background-color: white;
     align-items: center;
     align-self: center;
@@ -403,22 +413,110 @@ div .seccionesFooter a{
     box-shadow: 3px 4px 6px 8px rgba(23, 2, 58, 0.15);
 }
 
-.form-control, .selecIdioma, .btn{
+.form-control,
+.selecIdioma,
+.btn {
     margin-left: 20px;
 }
 
-.btnContacto{
+.btnContacto {
     padding: 10px 20px !important;
     font-size: 16px !important;
     font-weight: 500 !important;
     background: #0D6EFD !important;
 }
 
-.mapaContacto{
+.mapaContacto {
     width: 30% !important;
     margin-right: 40px !important;
 }
 
-.imgContacto{
+.imgContacto {
     margin-left: 40px !important;
 }
+
+
+
+.block-contain {
+    height: 620px;
+}
+
+.block6 {
+    height: 620px;
+    background-color: #42a8c8;
+
+}
+
+/* MAIN INSTITUCIONAL */
+
+.imgInstituto {
+    opacity: 0.2;
+    width: 100%;
+}
+
+.tituloElegirnos {
+    color: white;
+    font-size: 50px;
+    position: absolute;
+    top: 16%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.textoElegirnos {
+    color: white;
+    font-size: 40px;
+    position: absolute;
+    top: 22%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 10px !important;
+    width: 100%;
+    /* border-bottom: 7px solid #ccc;
+    margin-bottom: 10px !important; */
+}
+
+
+.lineaDivisoria{
+    position: absolute;
+    width: 80%;
+    height: 4px;
+    background-color: white;
+    top: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 10px !important;
+    width: 90%;
+}
+
+.tituloEnfoque {
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 50px;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.textoEnfoque {
+    color: white;
+    font-size: 40px;
+    position: absolute;
+    top: 86%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+}
+
+.tituloEquipo{
+    color: rgb(0, 0, 0);
+    font-size: 50px;
+
+}
+
+.textoEquipo{
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+}
+

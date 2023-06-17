@@ -11,7 +11,7 @@
     <!-- BS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <title>Inicio</title>
+    <title>Institucional</title>
 </head>
 
 <body>
@@ -20,18 +20,22 @@
             <div class="overlay"></div>
             <div class="container-fluid">
                 <a class="navbar-brand" href="../index.html">
-                    <img id="logo" src="../assets/logo22.webp" alt="">
+                    <img id="logo" src="../assets/logo22.webp" alt="Logo del instituto">
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="../pages/institucional.html">INSTITUCIONAL</a>
+                            <a class="nav-link active" aria-current="page"
+                                href="../pages/institucional.html">INSTITUCIONAL</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" type="button" id="btnDropIdiomas" data-bs-toggle="dropdown" aria-expanded="false">IDIOMAS</a>
+                            <a class="nav-link dropdown-toggle" type="button" id="btnDropIdiomas"
+                                data-bs-toggle="dropdown" aria-expanded="false">IDIOMAS</a>
                             <ul class="dropdown-menu" aria-labelledby="btnDropIdiomas">
                                 <li><a class="dropdown-item" href="#">INGLÉS</a></li>
                                 <li><a class="dropdown-item" href="#">FRANCÉS</a></li>
@@ -46,8 +50,9 @@
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" type="button" role="button" data-bs-toggle="dropdown" aria-expanded="false">SEDES</a>
-                            <ul class="dropdown-menu">
+                            <a class="nav-link dropdown-toggle" href="#" type="button" type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">SEDES</a>
+                            <ul class="dropdown-menu dropSede dropdown-menu-end">
                                 <li><a class="dropdown-item" href="#">DEVOTO</a></li>
                                 <li><a class="dropdown-item" href="#">FLORES</a></li>
                                 <li><a class="dropdown-item" href="#">MICROCENTRO</a></li>
@@ -61,75 +66,215 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">TRABAJA CON NOSOTROS</a>
+                            <a class="nav-link active" aria-current="page"
+                                href="../pages/trabajaConNostros.html">TRABAJA
+                                CON NOSOTROS</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="../pages/contacto.html">CONTACTO</a>
                         </li>
-                        <li class="nav-item" >
-                            <a class="nav-link active" id="signUp" aria-current="page">REGISTRO DE ALUMNOS</a>
-                            <div class="popUpSign">
-                                <div class="close-btn">&times;</div>
-                                <form class="formRegistro">
-                                    <h2>REGISTRO</h2>
-                                    <div class="form-element">
-                                        <label for="nombre">Nombre y Apellido</label>
-                                        <input type="text" id="nombreApe" placeholder="Ingrese su nombre y apellido" required>
+                        <button type="button" class="btn btn-primary btn-primary-registro" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            REGISTRO DE ALUMNOS
+                        </button>
+                        <button type="button" class="btn btn-primary btn-primary-logIn" data-bs-toggle="modal"
+                            data-bs-target="#exampleModalLogIn">
+                            LOG IN
+                        </button>
+
+                        <!-- Modal REGISTRO DE ALUMNOS -->
+                        <div class="modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        <button type="button" class="close-btn" data-bs-dismiss="modal"
+                                            aria-label="Close">&times;</button>
+                                        <form class="formRegistro">
+                                            <h2>REGISTRO</h2>
+                                            <div class="form-element">
+                                                <label for="nombre">Nombre y Apellido</label>
+                                                <input type="text" id="nombreApe"
+                                                    placeholder="Ingrese su nombre y apellido" required>
+                                            </div>
+                                            <div class="form-element">
+                                                <label for="email">Email</label>
+                                                <input type="text" id="emailRegistro" placeholder="Ingrese su mail"
+                                                    required>
+                                            </div>
+                                            <div class="form-element">
+                                                <label for="password">Contraseña</label>
+                                                <input type="password" id="passwordRegistro"
+                                                    placeholder="Ingrese su contraseña" required>
+                                                <p class="textoRegistro mt-2 mb-1">La contraseña no debe contener
+                                                    espacios vacíos y debe tener:</p>
+                                                <ul>
+                                                    <li class="itemPass">Al menos una letra minúscula.</li>
+                                                    <li class="itemPass">Al menos una letra mayúscula.</li>
+                                                    <li class="itemPass">Al menos un carácter especial.</li>
+                                                    <li class="itemPass">Una longitud de 8 a 20 caracteres.</li>
+                                                </ul>
+                                                <button type="submit" class="login-btn btnRegistro my-5"
+                                                    id="clickReg">Registrarse</button>
+                                            </div>
+                                        </form>
                                     </div>
-                                    <div class="form-element">
-                                        <label for="email">Email</label>
-                                        <input type="text" id="emailRegistro" placeholder="Ingrese su mail" required>
-                                    </div>
-                                    <div class="form-element">
-                                        <label for="password">Contraseña</label>
-                                        <input type="password" id="passwordRegistroñ" placeholder="Ingrese su contraseña" required>
-                                        <p class="textoRegistro mt-2 mb-1">La contraseña no debe contener espacios vacíos y debe tener:</p>
-                                        <li class="itemPass">Al menos una letra minúscula.</li>
-                                        <li class="itemPass">Al menos una letra mayúscula.</li>
-                                        <li class="itemPass">Al menos un carácter especial.</li>
-                                        <li class="itemPass">Una longitud de 8 a 20 caracteres.</li>
-                                        
-                                    </div>
-                                    <div class="form-element">
-                                        <button type="submit" class="login-btn btnRegistro my-5" id="clickReg">Registrarse</button>
-                                    </div>
-                                </form>
+                                </div>
                             </div>
-                        </li>
-                        <li class="center mt-4">
-                            <button id="show-login">LOG IN</button>
-                            <div class="popUp">
-                                <div class="close-btn">&times;</div>
-                                <form class="formUsuario">
-                                    <h2>Log in</h2>
-                                    <div class="form-element">
-                                        <label for="email">Email</label>
-                                        <input type="text" id="emailLogIn" placeholder="Ingrese su mail" required>
+                        </div>
+
+                        <!-- Modal LOG IN -->
+                        <div class="modal modalLogIn" id="exampleModalLogIn" tabindex="-1"
+                            aria-labelledby="exampleModalLabelLogIn" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content modal-contentLogIn" id="modalContentLogIn">
+                                    <div class="modal-body">
+                                        <button type="button" class="close-btn" data-bs-dismiss="modal"
+                                            aria-label="Close">&times;</button>
+                                        <form class="formUsuario">
+                                            <h2>Log in</h2>
+                                            <div class="form-element">
+                                                <label for="email">Email</label>
+                                                <input type="text" id="emailLogIn" placeholder="Ingrese su mail"
+                                                    required>
+                                            </div>
+                                            <div class="form-element">
+                                                <label for="password">Contraseña</label>
+                                                <input type="password" id="passwordLogIn"
+                                                    placeholder="Ingrese su contraseña" required>
+                                            </div>
+                                            <div class="form-elemen">
+                                                <input type="checkbox" id="recordarme">
+                                                <label for="recordarme" id="labelRec">Recordarme</label>
+                                            </div>
+                                            <div class="form-element">
+                                                <button type="submit" class="login-btn" id="clickLog">Iniciar
+                                                    sesión</button>
+                                            </div>
+                                            <div class="form-element" id="passOlvido">
+                                                <p class="passwordOlvidada">Olvidé mi contraseña</p>
+                                            </div>
+                                        </form>
                                     </div>
-                                    <div class="form-element">
-                                        <label for="password">Contraseña</label>
-                                        <input type="password" id="passwordLogIn" placeholder="Ingrese su contraseña" required>
-                                    </div>
-                                    <div class="form-elemen">
-                                        <input type="checkbox" id="recordarme">
-                                        <label for="recordarme" id="labelRec">Recordarme</label>
-                                    </div>
-                                    <div class="form-element">
-                                        <button type="submit" class="login-btn" id="clickLog">Iniciar sesión</button>
-                                    </div>
-                                    <div class="form-element" id="passOlvido">
-                                        <p class="passwordOlvidada">Olvidé mi contraseña</p>
-                                    </div>
-                                </form>
+                                </div>
                             </div>
-                        </li>
+                        </div>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
 
-    
+    <main>
+
+        <div class="container-fluid ">
+            <div class="row">
+                <div class="contenedorImgTexto position-relative">
+                    <img src="../assets/instituto.jpg" class="imgInstituto mt-5" alt="Instituto">
+                    <div class="elegirnos col-12">
+                        <h2 class="tituloElegirnos text-center">POR QUÉ ELEGIRNOS...</h2>
+                        <p class="textoElegirnos text-center px-5">Hace más de una década, un grupo de apasionados por
+                            los idiomas se reunió con un sueño
+                            en común: crear un lugar donde las barreras lingüísticas desaparecieran y donde
+                            cualquier persona pudiera embarcarse en un viaje de descubrimiento y crecimiento
+                            personal a través de los idiomas. Así nació el Instituto Internacional de Idiomas,
+                            un instituto que se ha convertido en un referente en la enseñanza de idiomas
+                            en nuestra comunidad. ofrecemos una amplia gama de idiomas para elegir. Desde los
+                            idiomas más populares y ampliamente hablados, como inglés, español, francés y alemán,
+                            hasta opciones más exóticas y en creciente demanda, como mandarín, japonés o árabe.
+                            Esto brinda a los estudiantes la oportunidad de explorar diferentes culturas y ampliar
+                            sus horizontes lingüísticos.
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <div class="row">
+                        <div class="divisor">
+                            <div class="lineaDivisoria"></div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="nuestroEnfoque">
+                            <h2 class="tituloEnfoque text-center">NUESTRO ENFOQUE</h2>
+                            <p class="textoEnfoque text-center ps-5 px-5">Se basa en la creencia de que aprender un
+                                nuevo
+                                idioma no debería ser solo un requisito académico, sino una experiencia enriquecedora
+                                y emocionante. En Instituto Internacional de Idiomas, nos esforzamos por crear un
+                                ambiente
+                                cálido, amigable
+                                y motivador, donde los estudiantes se sientan bienvenidos y alentados a alcanzar sus
+                                metas lingüísticas.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row" style="background-color: white;">
+                        <div class="col-4">
+                            <img src="../assets/estudiantes.jpg" alt="Estudiantes">
+                        </div>
+                        <div class="col-8">
+                            <h2 class="tituloEquipo text-center">SISTEMA DE ENSEÑANZA</h2>
+                            <p class="textoEquipo text-center">En el Instituto de Idiomas "LinguaPlus", nos
+                                enorgullece ofrecer un sistema de enseñanza flexible y adaptado a las necesidades
+                                de nuestros estudiantes. Entendemos que cada persona tiene diferentes circunstancias
+                                y preferencias de aprendizaje, por lo tanto, brindamos opciones tanto para clases
+                                presenciales como virtuales.
+                                Para aquellos que prefieren el entorno tradicional de un aula, ofrecemos clases
+                                presenciales en nuestras instalaciones. Nuestras aulas están diseñadas para crear
+                                un ambiente propicio para el aprendizaje, con comodidades y recursos educativos
+                                modernos. Los estudiantes tienen la oportunidad de interactuar directamente con sus
+                                profesores y compañeros de clase, practicar habilidades lingüísticas en situaciones
+                                reales y recibir retroalimentación inmediata.
+                                Por otro lado, para aquellos que buscan la flexibilidad de aprender desde cualquier
+                                lugar, ofrecemos clases virtuales a través de plataformas de videoconferencia
+                                interactivas. Las clases virtuales de LinguaPlus mantienen el mismo nivel de calidad
+                                y compromiso pedagógico que las clases presenciales. Los estudiantes pueden acceder a
+                                ellas desde la comodidad de sus hogares o cualquier otro lugar, lo que les permite
+                                ajustar su horario de estudio de acuerdo con sus necesidades y obligaciones personales.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" style="background-color: rgb(255, 255, 255);">
+                    <div class="col-8 sistemaEnsenanza">
+                        <h2 class="tituloEnsenanza text-center">NUESTRO EQUIPO DOCENTE</h2>
+                        <p class="textoEnsenanza text-center">Está compuesto por profesores altamente calificados que
+                            desempeñan un papel
+                            fundamental en el éxito de nuestros estudiantes. Nuestros profesores no solo son expertos en
+                            sus
+                            respectivos idiomas, sino que también están apasionados por la enseñanza y dedicados a
+                            brindar
+                            una
+                            experiencia educativa enriquecedora. utilizan una combinación de enfoques didácticos,
+                            incluyendo el enfoque comunicativo, el enfoque basado en tareas y el aprendizaje por
+                            proyectos. Se centran en fomentar la participación activa de los estudiantes en el aula,
+                            promoviendo la interacción oral, la práctica de habilidades lingüísticas y el uso de
+                            materiales auténticos.
+                        </p>
+                    </div>
+                    <div class="col-4">
+                        <img src="../assets/equipoProfesores.jpg" class="img-fluid" alt="Equipo de profesores">
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-4">
+                    <img src="../assets/chicaEstudiante.png" alt="Mujer estudiante" class="img-fluid" style="background-color:rgb(41, 126, 168)">
+                </div>
+                <div class="col-lg-8" style="padding:0px">
+                    <div class="short-div h-50" style="background-color:rgb(215, 77, 243)">
+                        <h2 class="tituloIngles text-center">INGLÉS</h2>
+                        <h3 class="text-center">Curso con modalidad presencial y virtual para todos los niveles</h3>
+                        <hr style="color: black; width: 75%; size:10;" />
+                    </div>
+                    <div class="short-div h-50" style="background-color:purple">Span 2</div>
+                </div>
+            </div>
+        </div> -->
+
+
+
+    </main>
 
     <footer class="container-fluid">
         <div class="row">
@@ -140,7 +285,7 @@
             </div>
             <div class="seccionesFooter col-2 mt-5">
                 <h4>INSTITUTO</h4>
-                <a href="#">
+                <a href="../pages/institucional.html">
                     <p>Sobre nosotros</p>
                 </a>
                 <a href="#">

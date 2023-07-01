@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,12 +9,11 @@
     <link rel="stylesheet" href="../style.css">
 
     <!-- BS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" 
-    rel="stylesheet" 
-    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" 
-    crossorigin="anonymous">
-    <title>Contacto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <title>Sedes</title>
 </head>
+
 <body>
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -50,10 +50,9 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page"
-                                href="../pages/sedel.html">SEDES</a>
+                            <a class="nav-link active" aria-current="page" href="../pages/sedes.html">SEDES</a>
                         </li>
-                        <!-- <li class="nav-item dropdown">
+                        <!--  <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" type="button" type="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">SEDES</a>
                             <ul class="dropdown-menu dropSede dropdown-menu-end">
@@ -70,7 +69,8 @@
                             </ul>
                         </li> -->
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="../pages/trabajaConNostros.html">TRABAJA
+                            <a class="nav-link active" aria-current="page"
+                                href="../pages/trabajaConNostros.html">TRABAJA
                                 CON NOSOTROS</a>
                         </li>
                         <li class="nav-item">
@@ -84,8 +84,6 @@
                             data-bs-target="#exampleModalLogIn">
                             LOG IN
                         </button>
-                        
-                        
 
                         <!-- Modal REGISTRO DE ALUMNOS -->
                         <div class="modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
@@ -128,30 +126,33 @@
                             </div>
                         </div>
 
-
                         <!-- Modal LOG IN -->
-                        <div class="modal modalLogIn" id="exampleModalLogIn" tabindex="-1" aria-labelledby="exampleModalLabelLogIn"
-                            aria-hidden="true">
+                        <div class="modal modalLogIn" id="exampleModalLogIn" tabindex="-1"
+                            aria-labelledby="exampleModalLabelLogIn" aria-hidden="true">
                             <div class="modal-dialog">
                                 <div class="modal-content modal-contentLogIn" id="modalContentLogIn">
                                     <div class="modal-body">
-                                        <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close">&times;</button>
+                                        <button type="button" class="close-btn" data-bs-dismiss="modal"
+                                            aria-label="Close">&times;</button>
                                         <form class="formUsuario">
                                             <h2>Log in</h2>
                                             <div class="form-element">
                                                 <label for="email">Email</label>
-                                                <input type="text" id="emailLogIn" placeholder="Ingrese su mail" required>
+                                                <input type="text" id="emailLogIn" placeholder="Ingrese su mail"
+                                                    required>
                                             </div>
                                             <div class="form-element">
                                                 <label for="password">Contraseña</label>
-                                                <input type="password" id="passwordLogIn" placeholder="Ingrese su contraseña" required>
+                                                <input type="password" id="passwordLogIn"
+                                                    placeholder="Ingrese su contraseña" required>
                                             </div>
                                             <div class="form-elemen">
                                                 <input type="checkbox" id="recordarme">
                                                 <label for="recordarme" id="labelRec">Recordarme</label>
                                             </div>
                                             <div class="form-element">
-                                                <button type="submit" class="login-btn" id="clickLog">Iniciar sesión</button>
+                                                <button type="submit" class="login-btn" id="clickLog">Iniciar
+                                                    sesión</button>
                                             </div>
                                             <div class="form-element" id="passOlvido">
                                                 <p class="passwordOlvidada">Olvidé mi contraseña</p>
@@ -164,86 +165,133 @@
                     </ul>
                 </div>
             </div>
-
         </nav>
     </header>
 
-    <main class="container-fluid">
-        <div class="row">
-            <div class="col">
-                <div class="position-relative text-center">
-                    <h3 class="position-absolute textoFotoContac">Comunicate con nosotros <br> al 0800-933-54999 <br> de lunes a viernes de 8 a 21 hs.<br> <br> O completa el formulario que se encuentra <br> abajo y nos contactaremos a la brevedad. </h3>
-                    <img src="../assets/fotoContacto.webp" class="img-fluid" alt="Foto de contacto">
+    <main>
+        <div class="container-fluid mt-5">
+            <div class="row row-cols-1 row-cols-md-4 mx-3 g-4">
+                <div class="col">
+                    <div class="card" style="height:45vh; border: 6px solid white;">
+                        <img src="../assets/sedes/devoto.jpg" class="card-img-top img-fluid" alt="Sede Villa Devoto" style="height: 60%;">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">VILLA DEVOTO</h5>
+                            <p class="card-text">Av. Segurola 2309.</p>
+                            <p class="card-text">Horarios: Lunes a viernes de 10 a 19hs y sábados de 9 a 13hs.</p>
+                            <p class="card-text">TEL: 4578-9321</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="height:45vh; border: 6px solid white;">
+                        <img src="../assets/sedes/flores.jpg" class="card-img-top img-fluid" alt="Sede Flores" style="height: 60%;">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">FLORES</h5>
+                            <p class="card-text">Varela 123.</p>
+                            <p class="card-text">Horarios: Lunes a viernes de 11 a 20hs y sábados de 9 a 14hs.</p>
+                            <p class="card-text">TEL: 4648-9322</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="height:45vh; border: 6px solid white;">
+                        <img src="../assets/sedes/microcentro.jpg" class="card-img-top img-fluid" alt="Sede Microcentro" style="height: 60%">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">MICROCENTRO</h5>
+                            <p class="card-text">Esmeralda 983.</p>
+                            <p class="card-text">Horarios: Lunes a viernes de 8 a 17hs y sábados de 9 a 13hs.</p>
+                            <p class="card-text">TEL: 4274-1221</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="height:45vh; border: 6px solid white;">
+                        <img src="../assets/sedes/ramos.jpg" class="card-img-top img-fluid" alt="Sede Ramos Mejía" style="height: 60%;">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">RAMOS MEJÍA</h5>
+                            <p class="card-text">Av. de Mayo 3420.</p>
+                            <p class="card-text">Horarios: Lunes a viernes de 10 a 19hs y sábados de 10 a 15hs.</p>
+                            <p class="card-text">TEL: 4234-3451</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="row row-cols-1 row-cols-md-4 mt-3 mx-3 g-4">
+                <div class="col">
+                    <div class="card" style="height:45vh; border: 6px solid white;">
+                        <img src="../assets/sedes/caseros.webp" class="card-img-top img-fluid" alt="Sede Caseros" style="height: 60%">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">CASEROS</h5>
+                            <p class="card-text">Juan Bautista Alberdi 4599.</p>
+                            <p class="card-text">Horarios: Lunes a viernes de 12 a 19hs y sábados de 9 a 12hs.</p>
+                            <p class="card-text">TEL: 4374-9234</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="height:45vh; border: 6px solid white;">
+                        <img src="../assets/sedes/sanMartin.jpg" class="card-img-top img-fluid" alt="Sede San Martín" style="height: 60%;">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">SAN MARTÍN</h5>
+                            <p class="card-text">Carlos Pellegrini 1006.</p>
+                            <p class="card-text">Horarios: Lunes a viernes de 9 a 18hs y sábados de 9 a 13hs.</p>
+                            <p class="card-text">TEL: 4546-9643</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="height:45vh; border: 6px solid white;">
+                        <img src="../assets/sedes/vicenteLopez.jpg" class="card-img-top img-fluid" alt="Sede Vicente Lópex" style="height: 60%;">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">VICENTE LÓPEZ</h5>
+                            <p class="card-text">Av. del Libertador 754.</p>
+                            <p class="card-text">Horarios: Lunes a viernes de 9 a 18hs y sábados de 8 a 13hs.</p>
+                            <p class="card-text">TEL: 4553-2341</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="height:45vh; border: 6px solid white;">
+                        <img src="../assets/sedes/lomas.webp" class="card-img-top img-fluid" alt="Sede Lomas de Zamora" style="height: 60%;">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">LOMAS DE ZAMORA</h5>
+                            <p class="card-text">Laprida 4567.</p>
+                            <p class="card-text">Horarios: Lunes a viernes de 11 a 19hs y sábados de 8 a 13hs.</p>
+                            <p class="card-text">TEL: 4321-9234</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="row row-cols-1 row-cols-md-4 mt-3 mx-3 mb-5 g-4">
+                <div class="col">
+                    <div class="card" style="height:45vh; border: 6px solid white;">
+                        <img src="../assets/sedes/avellaneda.jpg" class="card-img-top img-fluid" alt="Sede Avellaneda" style="height: 60%;">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">AVELLANEDA</h5>
+                            <p class="card-text">Arenales 328.</p>
+                            <p class="card-text">Horarios: Lunes a viernes de 12 a 18hs y sábados de 9 a 11hs.</p>
+                            <p class="card-text">TEL: 4528-2234</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="height:45vh; border: 6px solid white;">
+                        <img src="../assets/sedes/cordoba.webp" class="card-img-top img-fluid" alt="Sede Córdoba" style="height: 60%;">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">CÓRDOBA</h5>
+                            <p class="card-text">Av. San Martín 2320.</p>
+                            <p class="card-text">Horarios: </p>
+                            <p class="card-text">Lunes a viernes de 10 a 17hs y sábados de 9 a 13hs.</p>
+                            <p class="card-text">TEL: 3543-678812</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="row d-flex justify-content-between">
-            <div class="col-4 mt-5 ml-3">
-                <img src="../assets/peoplePic.webp" class="img-fluid imgContacto" alt="">
-            </div>
-            <div class="col-4 mt-5 mb-5">
-                <form id="formContacto" class="d-flex flex-column h-100">
-                    <h2 class="tituloContacto mt-5">Contactenos</h2>
-                    <div class="nombreApellido mb-3 mt-5">
-                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nombre y apellido">
-                    </div>
-                    <div class="emailCliente mb-3">
-                        <input type="email" class="form-control" id="exampleFormControlInput2" placeholder="Mail" required>
-                    </div>
-                    <div class="consultaCliente mb-3">
-                        <textarea class="form-control contacto" id="validationTextarea" placeholder="Escriba aquí su consulta"></textarea>
-                    </div>
-                    <div class="selecIdioma mb-3">
-                        <select class="form-select" id="idiomaConsulta" aria-label="select example">
-                            <option value="">Seleccione el idioma por el cual quiera consultar</option>
-                            <option value="1">Inglés</option>
-                            <option value="2">Francés</option>
-                            <option value="3">Italiano</option>
-                            <option value="4">Portugués</option>
-                            <option value="5">Aleman</option>
-                            <option value="6">Ruso</option>
-                            <option value="7">Coreano</option>
-                            <option value="8">Chino</option>
-                            <option value="9">Español para extranjeros</option>
-                            <option value="10">Lenguaje de señas argentinas</option>
-                        </select>
-                        <div class="invalid-feedback">Example invalid select feedback</div>
-                    </div>
-                    <div class="selecSede mb-3">
-                        <select class="form-select" id="sedeConsulta" aria-label="select example">
-                            <option value="">Seleccione la sede por la cual quiera consultar</option>
-                            <option value="1">Devoto</option>
-                            <option value="2">Flores</option>
-                            <option value="3">Microcentro</option>
-                            <option value="4">Ramos Mejía</option>
-                            <option value="5">Caseros</option>
-                            <option value="6">San Martín</option>
-                            <option value="7">Vicente López</option>
-                            <option value="8">Lomas de Zamora</option>
-                            <option value="9">Avellaneda</option>
-                            <option value="10">Córdoba</option>
-                        </select>
-                        <div class="invalid-feedback">Example invalid select feedback</div>
-                    </div>
-                    <div class="mt-4 mb-3">
-                        <button class="btn btn-primary btnContacto" id="btnContacto" type="click">Enviar mensaje</button>
-                    </div>
-                </form>
-            </div>
-            <div class="col-4 mt-5 pt-5 mapaContacto">
-                <div>
-                    <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.9250251678773!2d-58.4973694!3d-34.5807636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb6500040d661%3A0xc5a8f373f2059850!2sGriveo%202342%2C%20C1419%20Villa%20Pueyrredon%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1685575126998!5m2!1ses-419!2sar" 
-                    width="100%" 
-                    height="590" 
-                    style="border:0;" 
-                    allowfullscreen="" 
-                    loading="lazy" 
-                    referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
-                </div>
-            </div>
-        </div>
+        
+
     </main>
 
     <footer class="container-fluid">
@@ -255,16 +303,18 @@
             </div>
             <div class="seccionesFooter col-2 mt-5">
                 <h4>INSTITUTO</h4>
-                <a href="#">
-                    <h6>Sobre nosotros</h6>
+                <a href="../pages/institucional.html">
+                    <p>Sobre nosotros</p>
                 </a>
                 <a href="#">
-                    <h6>Profesores</h6>
+                    <p>Profesores</p>
+                </a>
+                <a href="#">
+                    <p>Trabajá con nosotros</p>
                 </a>
                 <a href="../pages/contacto.html">
-                    <h6>Contactanos</h6>
+                    <p>Contactanos</p>
                 </a>
-                
             </div>
             <div class="seccionesFooter col-2 mt-5">
                 <h4>Sedes</h4>
@@ -341,7 +391,7 @@
             </div>
             <div class="col-auto mt-5">
                 <a href="http://facebook.com/institutointidiomas">
-                    <img src="../assets/logoFb.png" id="logoFb" alt="Logo Facebook"> 
+                    <img src="../assets/logoFb.png" id="logoFb" alt="Logo Facebook">
                 </a>
             </div>
             <div class="col-auto mt-5">
@@ -352,26 +402,24 @@
         </div>
         <div class="row">
             <hr class="my-5">
-            <p class="textoCopyR text-center">&copy; 2023 Instituto Internacional de idiomas. Todos los derechos reservados.</p>
+            <p class="textoCopyR text-center">&copy; 2023 Instituto Internacional de idiomas. Todos los derechos
+                reservados.</p>
         </div>
-        
-
     </footer>
-    
 
 
+    <!-- Script JS -->
 
-<!-- Script JS -->
-<script src="../main.js"></script>
-<script src="../contacto.js"></script>
-<!-- Script JS BS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" 
-integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" 
-crossorigin="anonymous">
-</script>
 
-<!-- Script Librería Sweet Alert -->
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Script JS BS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+        </script>
+
+    <!-- Script Librería Sweet Alert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
 
 </body>
+
 </html>

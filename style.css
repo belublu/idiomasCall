@@ -102,9 +102,9 @@ nav {
 }
 
 .fotoInicio {
-    height: 800px !important;
+    height: 800px;
     width: auto;
-    margin-top: 40px !important;
+    margin-top: 40px;
 }
 
 .btn-primary-registro {
@@ -373,12 +373,12 @@ div .seccionesFooter a {
 #logoIg,
 #logoFb,
 #logoTw {
-    width: 50px !important;
-    height: 50px !important;
+    width: 50px;
+    height: 50px;
 }
 
 .imgFooter {
-    width: auto;
+    width: 50%;
     height: 100px;
 }
 
@@ -448,6 +448,7 @@ div .seccionesFooter a {
 }
 
 /* MAIN INSTITUCIONAL */
+
 
 .imgInstituto {
     opacity: 0.2;
@@ -520,3 +521,49 @@ div .seccionesFooter a {
     font-size: 40px;
 }
 
+
+.tituloEnsenanza{
+    font-size: 40px;
+    color: #3e32a8;
+    font-weight: 800;
+}
+
+.textoEnsenanza{
+    font-size: 30px;
+    
+}
+
+.imgEnsenanza{
+    width: 100%;
+}
+
+.lineaDivisoriaDos{
+    position: absolute;
+    width: 80%;
+    height: 4px;
+    background-color: black;
+    top: 162%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 10px !important;
+    width: 90%;
+}
+
+.tituloProfesores{
+    font-size: 40px;
+    
+}
+
+.textoProfesores{
+    font-size: 30px;
+}
+
+.linkProfes{
+    text-decoration: none;
+    color: black;
+    font-style: oblique;
+}
+
+.imgProfesores{
+    width: 100%;
+}
